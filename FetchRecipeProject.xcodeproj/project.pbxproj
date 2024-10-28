@@ -6,8 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		634AFCFA2CCC1D38005883C3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 634AFCF92CCC1D38005883C3 /* Kingfisher */; };
+		634AFD022CCFF289005883C3 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 634AFD012CCFF289005883C3 /* YouTubePlayerKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		634AFD162CD00D83005883C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 634AFCDC2CCAD625005883C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 634AFCE32CCAD625005883C3;
+			remoteInfo = FetchRecipeProject;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		634AFCE42CCAD625005883C3 /* FetchRecipeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRecipeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		634AFD122CD00D83005883C3 /* FetchRecipeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchRecipeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +32,24 @@
 			path = FetchRecipeProject;
 			sourceTree = "<group>";
 		};
+		634AFD132CD00D83005883C3 /* FetchRecipeProjectTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FetchRecipeProjectTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		634AFCE12CCAD625005883C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634AFD022CCFF289005883C3 /* YouTubePlayerKit in Frameworks */,
+				634AFCFA2CCC1D38005883C3 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		634AFD0F2CD00D83005883C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				634AFCE62CCAD625005883C3 /* FetchRecipeProject */,
+				634AFD132CD00D83005883C3 /* FetchRecipeProjectTests */,
 				634AFCE52CCAD625005883C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				634AFCE42CCAD625005883C3 /* FetchRecipeProject.app */,
+				634AFD122CD00D83005883C3 /* FetchRecipeProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,10 +97,35 @@
 			);
 			name = FetchRecipeProject;
 			packageProductDependencies = (
+				634AFCF92CCC1D38005883C3 /* Kingfisher */,
+				634AFD012CCFF289005883C3 /* YouTubePlayerKit */,
 			);
 			productName = FetchRecipeProject;
 			productReference = 634AFCE42CCAD625005883C3 /* FetchRecipeProject.app */;
 			productType = "com.apple.product-type.application";
+		};
+		634AFD112CD00D83005883C3 /* FetchRecipeProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 634AFD182CD00D83005883C3 /* Build configuration list for PBXNativeTarget "FetchRecipeProjectTests" */;
+			buildPhases = (
+				634AFD0E2CD00D83005883C3 /* Sources */,
+				634AFD0F2CD00D83005883C3 /* Frameworks */,
+				634AFD102CD00D83005883C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				634AFD172CD00D83005883C3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				634AFD132CD00D83005883C3 /* FetchRecipeProjectTests */,
+			);
+			name = FetchRecipeProjectTests;
+			packageProductDependencies = (
+			);
+			productName = FetchRecipeProjectTests;
+			productReference = 634AFD122CD00D83005883C3 /* FetchRecipeProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +140,10 @@
 					634AFCE32CCAD625005883C3 = {
 						CreatedOnToolsVersion = 16.0;
 					};
+					634AFD112CD00D83005883C3 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 634AFCE32CCAD625005883C3;
+					};
 				};
 			};
 			buildConfigurationList = 634AFCDF2CCAD625005883C3 /* Build configuration list for PBXProject "FetchRecipeProject" */;
@@ -94,18 +155,30 @@
 			);
 			mainGroup = 634AFCDB2CCAD625005883C3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				634AFCF82CCC1D37005883C3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				634AFD002CCFF289005883C3 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 634AFCE52CCAD625005883C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				634AFCE32CCAD625005883C3 /* FetchRecipeProject */,
+				634AFD112CD00D83005883C3 /* FetchRecipeProjectTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		634AFCE22CCAD625005883C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		634AFD102CD00D83005883C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		634AFD0E2CD00D83005883C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		634AFD172CD00D83005883C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 634AFCE32CCAD625005883C3 /* FetchRecipeProject */;
+			targetProxy = 634AFD162CD00D83005883C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		634AFCF02CCAD626005883C3 /* Debug */ = {
@@ -260,6 +348,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,6 +378,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,6 +389,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		634AFD192CD00D83005883C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PGC4FV57FE;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.david.FetchRecipeProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchRecipeProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchRecipeProject";
+			};
+			name = Debug;
+		};
+		634AFD1A2CD00D83005883C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PGC4FV57FE;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.david.FetchRecipeProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchRecipeProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchRecipeProject";
 			};
 			name = Release;
 		};
@@ -323,7 +449,48 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		634AFD182CD00D83005883C3 /* Build configuration list for PBXNativeTarget "FetchRecipeProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634AFD192CD00D83005883C3 /* Debug */,
+				634AFD1A2CD00D83005883C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		634AFCF82CCC1D37005883C3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.0;
+			};
+		};
+		634AFD002CCFF289005883C3 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		634AFCF92CCC1D38005883C3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 634AFCF82CCC1D37005883C3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		634AFD012CCFF289005883C3 /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 634AFD002CCFF289005883C3 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
+			productName = YouTubePlayerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 634AFCDC2CCAD625005883C3 /* Project object */;
 }
