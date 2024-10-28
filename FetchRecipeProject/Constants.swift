@@ -12,6 +12,5 @@ final class Constants {
     static let malformedRecipeUrl = "https://d3jbb8n5wk0qxi.cloudfront.net/recipes-malformed.json"
     static let emptyRecipeUrl = "https://d3jbb8n5wk0qxi.cloudfront.net/recipes-empty.json"
 
-
     static let activeLink = recipeUrl
 }
